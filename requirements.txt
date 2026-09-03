@@ -1,2 +1,2 @@
 streamlit
-psycopg2-binaryt
+psycopg2-binary
