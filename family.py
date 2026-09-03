@@ -99,6 +99,9 @@ if st.session_state["logged_in_user"] is None:
                         event_type="signup"
                     )
                     st.success("Account created! Switch to 'Log In' tab.")
+                    # Force Streamlit to immediately reload data so the new user appears in Log In dropdown
+                    time.sleep(1)  # Brief delay so user sees the success message
+                    st.rerun()
                 else:
                     st.error("That username is already taken.")
 
