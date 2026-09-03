@@ -1,7 +1,7 @@
 import psycopg2
 
 # Paste your Supabase PostgreSQL connection URI here
-DB_URL = "postgresql://postgres:bhadboiace1386@db.rgtiiqkydjbqiwthamlh.supabase.co:5432/postgres"
+DB_URL = "postgresql://postgres.rgtiiqkydjbqiwthamlh:bhadboiace1386@aws-1-eu-west-1.pooler.supabase.com:5432/postgres"
 
 def get_connection():
     return psycopg2.connect(DB_URL)
